@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="viewport" content="width=device-width initial-scale=1,user-scalable=no"/>
+	<title>demo</title>
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+	<!--<link rel="stylesheet" href="css/main.css">-->
+	<style>
+
+		/**
+         * é€šæ å¹¿å‘Šè½®æ’­
+         */
+
+		#main_ad {}
+
+		#main_ad > .carousel-inner > .item {
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;
+		}
+
+
+		/* ä»€ä¹ˆæ—¶å€™ä¸èƒ½ç”¨410pxé«˜åº¦ï¼Ÿ */
+
+
+		/*å¯ä»¥é€šè¿‡åª’ä½“æŸ¥è¯¢çš„æ–¹å¼æŽ§åˆ¶*/
+
+		@media (min-width: 768px) {
+			/*å½“å±å¹•å®½åº¦å¤§äºŽ768æ—¶ï¼ˆæ­¤æ—¶ä½¿ç”¨å¤§å›¾ï¼‰æ‰ä¼šæ‰§è¡Œ*/
+			#main_ad > .carousel-inner > .item {
+				height: 410px;
+			}
+		}
+
+		#main_ad > .carousel-inner > .item > img {
+			width: 100%;
+		}
+
+
+	</style>
+	<!--[if lt IE 9]>
+	<script src="lib/html5shiv/html5shiv.min.js"></script>
+	<script src="lib/respond/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+<div class="page-header text-center">
+	<h3>响应式轮播图实例</h3>
+</div>
+
+<!-- 广告轮播 -->
+<section id="main_ad" class="carousel slide" data-ride="carousel">
+	<!-- 下面的小点点，活动指示器 -->
+	<ol class="carousel-indicators">
+		<li data-target="#main_ad" data-slide-to="0" class="active"></li>
+		<li data-target="#main_ad" data-slide-to="1"></li>
+		<li data-target="#main_ad" data-slide-to="2"></li>
+		<li data-target="#main_ad" data-slide-to="3"></li>
+	</ol>
+	<!-- 轮播项 -->
+	<div class="carousel-inner" role="listbox">
+		<div class="item active" data-image-lg="images/slide_01_2000x410.jpg" data-image-xs="images/slide_01_640x340.jpg"></div>
+		<div class="item" data-image-lg="images/slide_02_2000x410.jpg" data-image-xs="images/slide_02_640x340.jpg"></div>
+		<div class="item" data-image-lg="images/slide_03_2000x410.jpg" data-image-xs="images/slide_03_640x340.jpg"></div>
+		<div class="item" data-image-lg="images/slide_04_2000x410.jpg" data-image-xs="images/slide_04_640x340.jpg"></div>
+	</div>
+	<!-- 控制按钮 -->
+	<a class="left carousel-control" href="#main_ad" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		<span class="sr-only">前一张</span>
+	</a>
+	<a class="right carousel-control" href="#main_ad" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		<span class="sr-only">下一张</span>
+	</a>
+</section>
+<!-- /广告轮播 -->
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
